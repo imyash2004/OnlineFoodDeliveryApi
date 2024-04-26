@@ -6,7 +6,7 @@ import java.util.List;
 
 public interface CategoryService {
 
-    public Category createCategory(String name,Long userId);
+    public Category createCategory(String name,Long userId) throws Exception;
 
 
     public List<Category>findCategoryByResataurantId(Long id)throws Exception;
