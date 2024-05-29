@@ -1,13 +1,9 @@
 package com.yash.repository;
 
-import com.yash.model.Cart;
+import com.yash.model.OrderItem;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface CartRepo extends JpaRepository<Cart,Long> {
-
-
-    public Cart findByCustomerId(long userId);
-
+public interface OrderItemRepo extends JpaRepository<OrderItem,Long> {
 }
